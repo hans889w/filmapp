@@ -29,16 +29,18 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 6.**Axios: API requests to OMDb.**
 
 
-npm or yarn
 
-!(/src/assets/movies.png)
+
+npm or yarn
 
 An OMDb API key (get one from OMDb API)
 
 
 
 
-### Installation {#custom-id}
+
+
+### Installation
 
 
 Clone the repository:
