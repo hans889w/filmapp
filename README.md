@@ -39,7 +39,7 @@ Clone the repository:
 git clone https://github.com/kullanici-adi/filmapp.git
 
 
-###Install dependencies:
+### Install dependencies:
 
 npm install
 
