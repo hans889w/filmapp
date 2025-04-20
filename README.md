@@ -30,6 +30,11 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 
 
 
+![Image](https://github.com/user-attachments/assets/47b82eab-8dc8-4d62-8da6-beca7cf792dd)
+
+
+
+
 
 ### Installation
 
