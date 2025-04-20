@@ -1,8 +1,8 @@
-# FilmApp{#custom-id}
+# FilmApp
 
 A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design. Users can explore popular movies, filter by genre, and search for movies using the OMDb API. Hover over a movie card to see detailed information in a popover.
 
-### Features{#custom-id}
+### Features
 
 
 
@@ -28,7 +28,7 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 
 6.**Axios: API requests to OMDb.**
 
-![Modern Movie Site Banner](src/assets/movies.png)
+![Movies Banner](./src/assets/movies.png)
 
 npm or yarn
 
