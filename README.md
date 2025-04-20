@@ -31,15 +31,6 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 
 
 
-npm or yarn
-
-An OMDb API key (get one from OMDb API)
-
-
-
-
-
-
 ### Installation
 
 
