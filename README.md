@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+FilmApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design. Users can explore popular movies, filter by genre, and search for movies using the OMDb API. Hover over a movie card to see detailed information in a popover.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
+
+Browse popular movies fetched from OMDb API.
+
+
+
+Search movies by title.
+
+
+
+Filter movies by genre.
+
+
+
+Hover over movie cards to see details (poster, IMDB rating, year, story, genre, cast).
+
+
+
+Responsive design with Tailwind CSS.
+
+
+Tech Stack
+
+
+Axios: API requests to OMDb.
+
+
+
+Vite: Build tool and development server.
+
+Prerequisites
+
+
+
+
+Node.js (v16 or higher)
+
+
+
+npm or yarn
+
+![alt text](image.png)
+
+An OMDb API key (get one from OMDb API)
+
+Installation
+
+
+
+
+
+Clone the repository:
+
+git clone https://github.com/kullanici-adi/filmapp.git
+cd filmapp
+
+
+
+Install dependencies:
+
+npm install
+
+
+
+Create a .env file in the root directory and add your OMDb API key:
+
+VITE_OMDB_API_KEY=your-api-key
+
+Note: The current code has a hardcoded API key (fc1fef96). For security, replace it with your own key in Home.tsx and use the .env variable.
+
+
+
+Update Home.tsx to use the environment variable:
+
+const response = await axios.get('http://www.omdbapi.com/', {
+  params: {
+    apikey: import.meta.env.VITE_OMDB_API_KEY,
+    s: term,
+    type: 'movie',
   },
-})
-```
+});
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+(Repeat for the handleSearch function.)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+Run the development server:
+
+npm run dev
+
+
+
+Open http://localhost:5173 in your browser.
+
