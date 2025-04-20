@@ -1,8 +1,8 @@
-#FilmApp
+# FilmApp{#custom-id}
 
 A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design. Users can explore popular movies, filter by genre, and search for movies using the OMDb API. Hover over a movie card to see detailed information in a popover.
 
-###Features
+### Features{#custom-id}
 
 
 
@@ -32,21 +32,19 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 
 npm or yarn
 
-![alt text](/src/assets/movies.png)
+!(/src/assets/movies.png)
 
 An OMDb API key (get one from OMDb API)
 
 
 
 
-###Installation
+### Installation {#custom-id}
 
 
 Clone the repository:
 
 git clone https://github.com/kullanici-adi/filmapp.git
-cd filmapp
-
 
 
 ###Install dependencies:
