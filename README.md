@@ -28,7 +28,6 @@ A movie browsing app built with React, TypeScript, Tailwind CSS, and Ant Design.
 
 6.**Axios: API requests to OMDb.**
 
-![Movies Banner](./src/assets/movies.png)
 
 npm or yarn
 
